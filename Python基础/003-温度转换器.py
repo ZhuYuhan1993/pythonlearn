@@ -22,3 +22,15 @@
 
 ## 🎯 
 """
+def basic_temp_converter():
+    flag = int(input('请输入转换类型（1.摄氏度转华氏度，2.华氏度转摄氏度）：'))
+    temp = float('请输入温度：')
+    if flag == 1:
+        new_temp = temp*1.8+32
+        print(f'摄氏度：{temp},华氏度：{new_temp}')
+    else:
+        new_temp = (temp-32)/1.8
+        print(f'华氏度：{temp},摄氏度：{new_temp}')
+
+if __name__ == '__main__':
+    basic_temp_converter()
